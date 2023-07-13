@@ -1,0 +1,96 @@
+
+header{
+    background-color: #1a1a1a;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    
+}
+
+header nav ul li{ 
+    display: inline;
+    list-style-type: none;
+    text-align: end; 
+    margin-right: 15px;
+    
+}
+
+a{
+    text-decoration: none;
+    color:#CBB26A;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: larger;
+   border: 2px solid black;
+   
+}
+
+.section{
+    width: 70%;
+    
+    
+}
+
+.article {
+text-align: center; 
+margin-top: 20px;
+
+
+}
+     
+.aside{ 
+    width: 22%;
+    border: 2px solid black;
+    background-color: #1a1a1a;
+    color:#CBB26A;
+    
+    height: 450px;
+
+}
+
+
+
+#Barcos {
+    margin-right: 15px;
+}
+
+body{
+    background-color: #CBB26A;
+    margin: 0;
+}
+
+
+
+footer{
+    background-color: #1a1a1a;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    color: #CBB26A;
+    text-align: center;
+    margin-top: auto;
+}
+
+.volver{
+    color: #1a1a1a;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    border: 2px solid black;
+}
+
+.reset{
+    background-color: #CBB26A;
+    color: #1a1a1a;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    border: 2px solid black;
+}
+.send{
+    background-color: #CBB26A;
+    color: #1a1a1a;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    border: 2px solid black;
+}
+
+
+
