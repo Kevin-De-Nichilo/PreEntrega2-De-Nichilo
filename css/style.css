@@ -147,7 +147,7 @@ footer{
 
 }
 
-@media (min-width: 823px) and (max-width: 1056px) {
+@media (min-width: 811px) and (max-width: 1056px) {
     
     a{
         font-size: 0.8rem;
@@ -189,3 +189,104 @@ footer{
     }
     
 }
+@media (min-width: 500px) and (max-width: 811px) {
+    
+    #logo{ 
+        width: auto;
+
+    }
+
+    a{
+        font-size: 0.5rem;
+        border-radius: 10px;
+        border: 2px solid black;
+        padding: 10px;
+       
+    }
+    #section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        
+    }    
+    #Barcos{
+        width: 350px;
+        height: 250px;
+        margin-bottom: 8px;
+    }
+    #Pesca {
+        width: 350px;
+        height: 250px;
+    }   
+
+    #aside{
+        display: none;
+    }
+
+
+    footer{
+        font-size: 1rem;
+        align-items: center;
+
+    }
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+    
+    #logo{ 
+        width: 100px;
+        height: 15vh;
+
+    }
+
+    a{  
+        flex-direction: column;
+        flex-wrap: wrap ;
+        font-size: 0.5rem;
+        border-radius: 10px;
+        border: 2px solid black;
+        padding: 10px;
+       
+    }
+    #section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        
+    }    
+    #Barcos{
+        width: 310px;
+        height: 250px;
+        margin-bottom: 8px;
+    }
+    #Pesca {
+        width: 310px;
+        height: 250px;
+    }   
+
+    #aside{
+        display: none;
+    }
+
+
+    footer{
+        width: 100&;
+        font-size: 1rem;
+        align-items: center;
+
+    }
+}
+@media(min-width: 50px) and (max-width: 320px){
+
+    #aside{
+        display: none;
+    }
+
+}
+
