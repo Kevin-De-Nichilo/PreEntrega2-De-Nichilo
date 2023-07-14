@@ -6,25 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="shortcut icon" href="../assets/imagenes/favicon (1).ico"">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 
     <title>Productos</title>
 </head>
 
 <body>  
-    <header> <img src="../assets/imagenes/LOGO NUEVO.png" alt="Pescaderia De Nichilo" width="250" height="120"">
-        <nav>
-           <ul>
-              <li><a href="../index.html">Inicio</a></li>
-              <li><a href="../pages/contacto.html">Contacto</a></li>
-              <li><a href="../pages/productos.html">Productos</a></li>
-              <li><a href="https://goo.gl/maps/DKB2U7o4ZrVxboAG6" target="_blank">Ubicacion</a></li>
-              <li><a href="../pages/nosotros.html">Nosotros</a></li>
-           </ul>
-          
-        </nav>
-    </header>
+    <header class="container-fluid bg-dark">
+        <div class="row h-100">
+           <div class="col-3"><img class="d-flex justify-content-center align-items-center" src="./assets/imagenes/logo-nuevo.png" alt="Pescaderia De Nichilo" width="250"
+                 height="120"">
+           </div>
+              <nav class=" col-9">
+              <ul class="d-flex justify-content-around align-items-center h-100">
+                 <li><a href=" ../index.html">Inicio</a></li>
+                 <li><a href="./pages/contacto.html">Contacto</a></li>
+                 <li><a href="./pages/productos.html">Productos</a></li>
+                 <li><a href="https://goo.gl/maps/DKB2U7o4ZrVxboAG6" target="_blank">Ubicacion</a></li>
+                 <li><a href="./pages/nosotros.html">Nosotros</a></li>
+              </ul>
+              </nav>
+           </div>
+  
+     </header>
     
     <table border="3px" cellspacing="10px" width="100%" height="700px">
         <tr style="background-color: blue;">
@@ -53,6 +59,9 @@
     
     
     <a class="volver" href="../index.html">Volver</a>
-    
+   
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script> 
 </body>
 </html>
