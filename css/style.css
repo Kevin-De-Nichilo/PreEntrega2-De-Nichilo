@@ -82,18 +82,23 @@ footer{
     background-color: #1a1a1a;
     color:#CBB26A;
     height: 450px;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
- 
-    
 
 }
 
 .titulo{
+    
     text-align: center;
 }
 
 .texto{
+    justify-content: flex-end;
     text-align: center;
     align-items: center;
 }
