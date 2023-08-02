@@ -37,50 +37,58 @@
 
     <!-- FORMULARIO DE CONTACTO -->
 
-    <h1>Contacto</h1>
-    <div id="formulario">
-        <form action="" method="post" enctype="text/plain">
+    <h1 class="d-flex justify-content-center">Contacto y ubicacion.</h1>
+    <div id="content">
 
-            <fieldset>
-                <legend>DATOS PERSONALES</legend>
+        <div id="Ubicacion">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3140.588216310569!2d-57.584602!3d-38.079969999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzjCsDA0JzQ3LjkiUyA1N8KwMzUnMDQuNiJX!5e0!3m2!1ses!2sar!4v1690990188634!5m2!1ses!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div id="formulario">
+            <form action="" method="post" enctype="text/plain">
+
+                <fieldset>
+                    <legend>DATOS PERSONALES</legend>
                     <div><label for="nombre">Escriba su nombre:</label>
-                    <input type="text" name="Nombre completo" id="nombre" required placeholder="Nombre y apellido">
+                        <input type="text" name="Nombre completo" id="nombre" required placeholder="Nombre y apellido">
                     </div>
 
                     <div><label for="correo">Escriba su email:</label>
-                    <input type="email" name="email" id="correo" required placeholder="hola@gmail.com">
+                        <input type="email" name="email" id="correo" required placeholder="hola@gmail.com">
                     </div>
 
                     <div><label for="contraseña">Ingrese su contraseña:</label>
-                    <input type="password" name="contraseña" id="contraseña" required placeholder="Respetando mayusculas">
+                        <input type="password" name="contraseña" id="contraseña" required
+                            placeholder="Respetando mayusculas">
                     </div>
                     <div>
-                    <p>¿Es usted mayor de edad?</p>
-                    <label for="esMayor">Si</label>
-                    <input type="radio" name="edad" id="esMayor">
-                    <label for="esMenor">No</label>
-                    <input type="radio" name="edad" id="esMenor">
+                        <p>¿Es usted mayor de edad?</p>
+                        <label for="esMayor">Si</label>
+                        <input type="radio" name="edad" id="esMayor">
+                        <label for="esMenor">No</label>
+                        <input type="radio" name="edad" id="esMenor">
 
                     </div>
-        </fieldset>
+                </fieldset>
 
-        <div>
-            <input class="reset" type="reset" value="Resetear">
-            <input class="send" type="submit" value="Enviar">
-            
+                <div>
+                    <input class="reset" type="reset" value="Resetear">
+                    <input class="send" type="submit" value="Enviar">
+
+                </div>
+
+
+            </form>
+
         </div>
 
 
-        </form>
 
     </div>
-    <div id="Ubicacion">
-        <iframe
-        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3140.588216310569!2d-57.584602!3d-38.079969999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzjCsDA0JzQ3LjkiUyA1N8KwMzUnMDQuNiJX!5e0!3m2!1ses!2sar!4v1690990188634!5m2!1ses!2sar"
-        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    
+
 
 
     <footer>

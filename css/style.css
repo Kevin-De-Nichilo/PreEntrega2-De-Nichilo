@@ -51,8 +51,39 @@ input::hover{
     padding: 20px;
 }
 
+#content{
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 
-form{
+#formulario{
+    
+    /* height: 70vh; */
+    border: 2px solid black;
+    margin: 200px;
+    padding: 0;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 450px;
+    
+        
+}
+
+#Ubicacion{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* form{
     width: 50%;
     height: 70vh;
     border: 2px solid black;
@@ -62,7 +93,7 @@ form{
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-}
+} */
     
 body{
         background-color: #CBB26A;
