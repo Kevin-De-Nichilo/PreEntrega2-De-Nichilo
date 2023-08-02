@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,85 +8,98 @@
 
     <link rel="shortcut icon" href="../assets/imagenes/favicon (1).ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 
     <title>Contacto</title>
 </head>
 
-<body> 
-      <!-- ENCABEZADO -->
+<body>
+    <!-- ENCABEZADO -->
     <header class="container-fluid bg-dark">
         <div class="row h-100">
-           <div class="col-3"><img class="d-flex justify-content-center align-items-center" src="../assets/imagenes/logo-nuevo.png" alt="Pescaderia De Nichilo" width="250"
-                 height="120"">
+            <div class="col-3"><img class="d-flex justify-content-center align-items-center"
+                    src="../assets/imagenes/logo-nuevo.png" alt="Pescaderia De Nichilo" width="250" height="120"">
            </div>
               <nav class=" col-9">
-                    <ul class="d-flex justify-content-around align-items-center h-100">
-                        <li><a href=" ../index.html">Inicio</a></li>
-                        <li><a href="./contacto.html">Contacto</a></li>
-                        <li><a href="./productos.html">Productos</a></li>
-                        <li><a href="https://goo.gl/maps/DKB2U7o4ZrVxboAG6" target="_blank">Ubicacion</a></li>
-                        <li><a href="./nosotros.html">Nosotros</a></li>
-                        <li><a href="./descongelado.html">Como descongelar</a></li>
-              </ul>
-              </nav>
-           </div>
-  
-     </header>
+                <ul class="d-flex justify-content-around align-items-center h-100">
+                    <li><a href=" ../index.html">Inicio</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                    <li><a href="./productos.html">Productos</a></li>
+                    <li><a href="https://goo.gl/maps/DKB2U7o4ZrVxboAG6" target="_blank">Ubicacion</a></li>
+                    <li><a href="./nosotros.html">Nosotros</a></li>
+                    <li><a href="./descongelado.html">Como descongelar</a></li>
+                </ul>
+                </nav>
+            </div>
+
+    </header>
 
     <!-- FORMULARIO DE CONTACTO -->
-    
+
     <h1>Contacto</h1>
+    <div id="formulario">
         <form action="" method="post" enctype="text/plain">
 
-        <fieldset>
-            <legend>DATOS PERSONALES</legend>
-            <div><label for="nombre">Escriba su nombre:</label>
-                <input type="text" name="Nombre completo" id="nombre" required placeholder="Nombre y apellido">
-            </div>
-            
-            <div><label for="correo">Escriba su email:</label>
+            <fieldset>
+                <legend>DATOS PERSONALES</legend>
+                    <div><label for="nombre">Escriba su nombre:</label>
+                    <input type="text" name="Nombre completo" id="nombre" required placeholder="Nombre y apellido">
+                    </div>
+
+                    <div><label for="correo">Escriba su email:</label>
                     <input type="email" name="email" id="correo" required placeholder="hola@gmail.com">
-            </div>
-            
-            <div><label for="contraseña">Ingrese su contraseña:</label>
-                        <input type="password" name="contraseña" id="contraseña" required placeholder="Respetando mayusculas">
-            </div>
-            <div><p>¿Es usted mayor de edad?</p>
-                <label for="esMayor">Si</label>
-                <input type="radio" name="edad" id="esMayor">
-                <label for="esMenor">No</label>
-                <input type="radio" name="edad" id="esMenor">
-                
-            </div>
+                    </div>
+
+                    <div><label for="contraseña">Ingrese su contraseña:</label>
+                    <input type="password" name="contraseña" id="contraseña" required placeholder="Respetando mayusculas">
+                    </div>
+                    <div>
+                    <p>¿Es usted mayor de edad?</p>
+                    <label for="esMayor">Si</label>
+                    <input type="radio" name="edad" id="esMayor">
+                    <label for="esMenor">No</label>
+                    <input type="radio" name="edad" id="esMenor">
+
+                    </div>
         </fieldset>
-        
+
         <div>
             <input class="reset" type="reset" value="Resetear">
             <input class="send" type="submit" value="Enviar">
-            <a class="volver" href="../index.html">Volver al Inicio</a>
-        </div> 
+            
+        </div>
 
 
-</form>
+        </form>
 
- 
-<footer>
-    <div class="container-fluid bg-dark">
-       <div class="row h-100">
-          <div class="col-8">
-             <h1 id="footerText" class="d-flex justify-content-center align-items-center">© Todos los derechos
-                reservados. El pescado mas fresco de la ciudad.
-             </h1>   
-          </div>
-          <nav class="col-4">
-             <a class="d-flex justify-content-center align-items-center h-100" href="https://www.instagram.com/kevin.denichilo/" target="_blank">REDES</a>
-          
- </footer>
+    </div>
+    <div id="Ubicacion">
+        <iframe
+        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3140.588216310569!2d-57.584602!3d-38.079969999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzjCsDA0JzQ3LjkiUyA1N8KwMzUnMDQuNiJX!5e0!3m2!1ses!2sar!4v1690990188634!5m2!1ses!2sar"
+        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
     
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-crossorigin="anonymous"></script>   
+
+
+    <footer>
+        <div class="container-fluid bg-dark">
+            <div class="row h-100">
+                <div class="col-8">
+                    <h1 id="footerText" class="d-flex justify-content-center align-items-center">© Todos los derechos
+                        reservados. El pescado mas fresco de la ciudad.
+                    </h1>
+                </div>
+                <nav class="col-4">
+                    <a class="d-flex justify-content-center align-items-center h-100"
+                        href="https://www.instagram.com/kevin.denichilo/" target="_blank">REDES</a>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

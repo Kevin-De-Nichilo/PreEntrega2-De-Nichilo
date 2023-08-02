@@ -17,6 +17,19 @@ a{
    
 }
 
+a:hover{
+    background-color: #CBB26A;
+    color: #1a1a1a;
+    font-size: 2rem;
+}
+
+input::hover{
+    background-color: #CBB26A;
+    color: #1a1a1a;
+    font-size: 2rem;
+}
+
+
 .reset{
     text-decoration: none;
     color:#CBB26A;
@@ -40,6 +53,7 @@ a{
 
 
 form{
+    width: 50%;
     height: 70vh;
     border: 2px solid black;
     margin: 200px;
