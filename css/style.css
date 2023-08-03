@@ -68,12 +68,16 @@ input::hover{
 }
 
 #content{
-    
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+
+.Titulo{
+    text-align: center;
+    margin-top: 30px;
 }
 
 #formulario{
