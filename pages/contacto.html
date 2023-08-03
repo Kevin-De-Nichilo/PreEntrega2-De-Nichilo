@@ -36,7 +36,7 @@
 
     <!-- FORMULARIO DE CONTACTO -->
 
-    <h1 class="d-flex justify-content-center">Contacto y ubicacion.</h1>
+    <h1 class="d-flex justify-content-center">Contacto y ubicacion</h1>
     <div id="content">
 
         <div id="Ubicacion">
@@ -46,11 +46,11 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-        <div id="formulario">
+        <div id="formulario" class="bg-dark">
             <form action="" method="post" enctype="text/plain">
 
                 <fieldset>
-                    <legend>DATOS PERSONALES</legend>
+                    <legend>CONTACTANOS</legend>
                     <div><label for="nombre">Escriba su nombre:</label>
                         <input type="text" name="Nombre completo" id="nombre" required placeholder="Nombre y apellido">
                     </div>
@@ -58,18 +58,39 @@
                     <div><label for="correo">Escriba su email:</label>
                         <input type="email" name="email" id="correo" required placeholder="hola@gmail.com">
                     </div>
-
-                    <div><label for="contraseña">Ingrese su contraseña:</label>
-                        <input type="password" name="contraseña" id="contraseña" required
-                            placeholder="Respetando mayusculas">
-                    </div>
+   
                     <div>
-                        <p>¿Es usted mayor de edad?</p>
-                        <label for="esMayor">Si</label>
-                        <input type="radio" name="edad" id="esMayor">
-                        <label for="esMenor">No</label>
-                        <input type="radio" name="edad" id="esMenor">
+                        <select name="Provincia" id="Provincia">
+                            <option>Buenos Aires</option>
+                            <option>Ciudad Autonoma de Buenos Aires</option>
+                            <option>Catamarca</option>
+                            <option>Chaco</option>
+                            <option>Chubut</option>
+                            <option>Córdoba</option>
+                            <option>Corrientes</option>
+                            <option>Entre Ríos</option>
+                            <option>Formosa</option>
+                            <option>Jujuy</option>
+                            <option>La Pampa</option>
+                            <option>La Rioja</option>
+                            <option>Mendoza</option>
+                            <option>Misiones</option>
+                            <option>Neuquén</option>
+                            <option>Río Negro</option>
+                            <option>Salta</option>
+                            <option>San Juan</option>
+                            <option>San Luis</option>
+                            <option>Santa Cruz</option>
+                            <option>Santa Fe</option>
+                            <option>Santiago del Estero</option>
+                            <option>Tierra del Fuego</option>
+                            <option>Tucumán</option>
+                        </select> 
+                    </div>
 
+                    <div class="Mensaje">
+                        <label for="mensaje">Dejanos tu mensaje:</label>
+                        <textarea name="mensaje" id="mensaje" placeholder="Mensaje" required></textarea>
                     </div>
                 </fieldset>
 

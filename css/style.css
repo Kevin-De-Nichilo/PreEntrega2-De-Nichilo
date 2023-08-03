@@ -29,16 +29,27 @@ input::hover{
     font-size: 2rem;
 }
 
+#mensaje{
+    width: 100%;
+}
 
+#Provincia{
+    width: 100%;
+}
 .reset{
     text-decoration: none;
     color:#CBB26A;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
-    border-radius: 40px;
     border: 2px solid black;
     padding: 20px;
 
+}
+
+.reset:hover{
+    background-color: #1a1a1a;
+    color: white;
+    font-size: 1.7rem;
 }
 
 .send{ 
@@ -46,9 +57,14 @@ input::hover{
     color:#CBB26A;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
-    border-radius: 40px;
     border: 2px solid black;
     padding: 20px;
+}
+
+.send:hover{
+    background-color: #1a1a1a;
+    color: white;
+    font-size: 1.7rem;
 }
 
 #content{
@@ -61,8 +77,6 @@ input::hover{
 }
 
 #formulario{
-    
-    /* height: 70vh; */
     border: 2px solid black;
     margin: 200px;
     padding: 0;
@@ -76,6 +90,14 @@ input::hover{
         
 }
 
+legend{
+    color: #CBB26A;
+}
+
+label{
+    color: #CBB26A;
+}
+
 #Ubicacion{
     
     display: flex;
@@ -83,18 +105,7 @@ input::hover{
     align-items: center;
 }
 
-/* form{
-    width: 50%;
-    height: 70vh;
-    border: 2px solid black;
-    margin: 200px;
-    padding: 0;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-} */
-    
+
 body{
         background-color: #CBB26A;
         margin: 0;
