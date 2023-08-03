@@ -96,6 +96,7 @@ input::hover{
 
 legend{
     color: #CBB26A;
+    border-bottom: 2px solid white;
 }
 
 label{
@@ -197,6 +198,45 @@ footer{
 }
 
 
+#merluza{
+    width: 200px;
+    height: 200px;
+}
+
+#calamar{
+    width: 200px;
+    height: 200px;
+}
+
+#abadejo{
+    width: 200px;
+    height: 200px;
+}
+
+#langostino{
+    width: 200px;
+    height: 200px;
+}
+
+.fotos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#puerto{
+    margin-right: 20px;
+    width: 500px;
+    height: 350px;
+
+}
+
+#planta{
+    width: 500px;
+    height: 350px;
+}
 
 .volver{
     color: #1a1a1a;
@@ -291,6 +331,34 @@ footer{
     height: 50%;
     margin-left: 20px;
 }
+
+.nosotros{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.resp1{
+    font-size: 1.5rem;
+}
+
+.produccion{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.resp2{
+    font-size: 1.3rem;
+}
+
+
+
 
 /* #footerText{
     font-size: 2rem;
