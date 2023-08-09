@@ -1,542 +1,332 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-a{
-    text-decoration: none;
-    color:#CBB26A;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5rem;
-    border-radius: 40px;
-    border: 2px solid black;
-    padding: 20px;
-   
+body {
+  background-color: #CBB26A;
+  margin: 0;
+  height: 100vh;
 }
 
-a:hover{
-    background-color: #CBB26A;
-    color: #1a1a1a;
-    font-size: 2rem;
+header {
+  height: 15vh;
+}
+header div #logo {
+  width: 250px;
+  height: 120px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #CBB26A;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  border-radius: 40px;
+  border: 2px solid black;
+  padding: 20px;
+}
+header nav ul li a:hover {
+  background-color: #CBB26A;
+  color: #1a1a1a;
+  font-size: 2rem;
 }
 
-input::hover{
-    background-color: #CBB26A;
-    color: #1a1a1a;
-    font-size: 2rem;
+main {
+  height: 75vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+main #seccion {
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+main #seccion #section {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+main #seccion #section #Barcos {
+  margin-right: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 550px;
+  height: 450px;
+}
+main #seccion #section #Pesca {
+  display: flex;
+  flex-wrap: wrap;
+  width: 550px;
+  height: 450px;
+}
+main #seccion #aside {
+  width: 22%;
+  border: 2px solid black;
+  background-color: #1a1a1a;
+  color: #CBB26A;
+  height: 450px;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+main #seccion #aside .titulo {
+  text-align: center;
+}
+main #seccion #aside .texto {
+  justify-content: flex-end;
+  text-align: center;
+  align-items: center;
 }
 
-#mensaje{
-    width: 100%;
+main .container-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+main .container-flex .container-img {
+  width: 300px;
+  height: 300px;
+  border: 2px solid black;
+}
+main .container-flex .container-img #merluza {
+  width: 200px;
+  height: 200px;
+}
+main .container-flex .container-img {
+  width: 300px;
+  height: 300px;
+  border: 2px solid black;
+}
+main .container-flex .container-img #calamar {
+  width: 200px;
+  height: 200px;
+}
+main .container-flex .container-img {
+  width: 300px;
+  height: 300px;
+  border: 2px solid black;
+}
+main .container-flex .container-img #abadejo {
+  width: 200px;
+  height: 200px;
+}
+main .container-flex .container-img {
+  width: 300px;
+  height: 300px;
+  border: 2px solid black;
+}
+main .container-flex .container-img #langostino {
+  width: 200px;
+  height: 200px;
+}
+main .nosotros {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  text-align: center;
+}
+main .nosotros .somos .resp1 {
+  font-size: 1.5rem;
+}
+main .produccion {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+main .produccion .producimos .resp2 {
+  font-size: 1.3rem;
+}
+main .fotos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+main .fotos #puerto {
+  margin-right: 20px;
+  width: 500px;
+  height: 350px;
+}
+main .fotos #planta {
+  width: 500px;
+  height: 350px;
 }
 
-#Provincia{
-    width: 100%;
+main #informacion {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-.reset{
-    text-decoration: none;
-    color:#CBB26A;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5rem;
-    border: 2px solid black;
-    padding: 20px;
-
+main #informacion #titulo {
+  border-bottom: 2px solid black;
 }
-
-.reset:hover{
-    background-color: #1a1a1a;
-    color: white;
-    font-size: 1.7rem;
+main #informacion #descongelado {
+  text-align: center;
+  font-size: 2rem;
+  border-bottom: 2px solid black;
 }
-
-.send{ 
-    text-decoration: none;
-    color:#CBB26A;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5rem;
-    border: 2px solid black;
-    padding: 20px;
+main #informacion #descongela2 {
+  text-align: center;
+  font-size: 1.5rem;
+  border-bottom: 2px solid black;
 }
-
-.send:hover{
-    background-color: #1a1a1a;
-    color: white;
-    font-size: 1.7rem;
+main .img-tips {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
 }
-
-#content{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+main .img-tips #video {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
 }
-
-.Titulo{
-    text-align: center;
-    margin-top: 30px;
+main .img-tips #video iframe {
+  width: 500px;
+  height: 350px;
 }
-
-#formulario{
-    border: 2px solid black;
-    margin: 200px;
-    padding: 0;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    width: 600px;
-    height: 450px;
-    
-        
+main .containerTips {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+  margin-left: 20px;
+}
+main .containerTips h2 {
+  text-align: center;
 }
 
-legend{
-    color: #CBB26A;
-    border-bottom: 2px solid white;
+main #content {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+main #content #Ubicacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #content #Ubicacion iframe {
+  width: 600px;
+  height: 450px;
+}
+main #content #formulario {
+  border: 2px solid black;
+  margin: 200px;
+  padding: 0;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 450px;
+}
+main #content #formulario form fieldset legend {
+  color: #CBB26A;
+  border-bottom: 2px solid white;
+}
+main #content #formulario form fieldset div label {
+  color: #CBB26A;
+}
+main #content #formulario form fieldset div label {
+  color: #CBB26A;
+}
+main #content #formulario form fieldset div label {
+  color: #CBB26A;
+}
+main #content #formulario form fieldset div #Provincia {
+  width: 100%;
+}
+main #content #formulario form fieldset .Mensaje label {
+  color: #CBB26A;
+}
+main #content #formulario form fieldset .Mensaje #mensaje {
+  width: 100%;
+}
+main #content #formulario form .reset {
+  text-decoration: none;
+  background-color: #1a1a1a;
+  color: #CBB26A;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  border: 2px solid black;
+  padding: 20px;
+}
+main #content #formulario form .reset:hover {
+  background-color: #1a1a1a;
+  color: white;
+  font-size: 1.7rem;
+}
+main #content #formulario form .send {
+  text-decoration: none;
+  background-color: #1a1a1a;
+  color: #CBB26A;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  border: 2px solid black;
+  padding: 20px;
+}
+main #content #formulario form .send:hover {
+  background-color: #1a1a1a;
+  color: white;
+  font-size: 1.7rem;
 }
 
-label{
-    color: #CBB26A;
+footer {
+  height: 10vh;
+  background-color: #1a1a1a;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 36px;
+  color: #CBB26A;
+  text-align: center;
+  margin-top: auto;
+}
+footer a {
+  text-decoration: none;
+  color: #CBB26A;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  border-radius: 40px;
+  border: 2px solid black;
+  padding: 20px;
+}
+footer a:hover {
+  background-color: #CBB26A;
+  color: #1a1a1a;
+  font-size: 2rem;
 }
 
-#Ubicacion{
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-body{
-        background-color: #CBB26A;
-        margin: 0;
-        height: 100vh;
-}
-    
-
-
-header{
-    height: 15vh;
-}
-
-
-main{
-    height: 75vh;
-
-}
-
-footer{
-    height: 10vh;
-    background-color: #1a1a1a;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 36px;
-    color: #CBB26A;
-    text-align: center;
-    margin-top: auto;
-}
-
-#section{
-    width: 70%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    
-    
-}
-
-#seccion{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-}
-     
-
-
-#Barcos {
-    margin-right: 15px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#Pesca{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#aside{ 
-    width: 22%;
-    border: 2px solid black;
-    background-color: #1a1a1a;
-    color:#CBB26A;
-    height: 450px;
-    margin-top: auto;
-    margin-bottom: auto;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.titulo{
-    
-    text-align: center;
-}
-
-.texto{
-    justify-content: flex-end;
-    text-align: center;
-    align-items: center;
-}
-
-
-#merluza{
-    width: 200px;
-    height: 200px;
-}
-
-#calamar{
-    width: 200px;
-    height: 200px;
-}
-
-#abadejo{
-    width: 200px;
-    height: 200px;
-}
-
-#langostino{
-    width: 200px;
-    height: 200px;
-}
-
-.fotos{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-#puerto{
-    margin-right: 20px;
-    width: 500px;
-    height: 350px;
-
-}
-
-#planta{
-    width: 500px;
-    height: 350px;
-}
-
-.volver{
-    color: #1a1a1a;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: larger;
-    border: 2px solid black;
-}
-
-.reset{
-    background-color: #CBB26A;
-    color: #1a1a1a;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: larger;
-    border: 2px solid black;
-}
-.send{
-    background-color: #CBB26A;
-    color: #1a1a1a;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: larger;
-    border: 2px solid black;
-}
-
-.container-flex{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-
-}
-
-.container-img{
-
-    width: 300px;
-    height: 300px;
-    border: 2px solid black;
-
-}
-
-#informacion{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-#titulo{
-    border-bottom: 2px solid black;
-}
-
-#descongelado{
-    text-align: center;
-    font-size: 2rem;
-    border-bottom: 2px solid black;
-}
-
-#descongela2{
-    text-align: center;
-    font-size: 1.5rem;
-    border-bottom: 2px solid black;
-}
-
-.img-tips{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 25px;
-}
-
-#video{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-}
-
-.containerTips{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    height: 50%;
-    margin-left: 20px;
-}
-
-.nosotros{
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    text-align: center;
-
-}
-
-.resp1{
-    font-size: 1.5rem;
-}
-
-.produccion{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.resp2{
-    font-size: 1.3rem;
-}
-
-
-
-
-/* #footerText{
-    font-size: 2rem;
-    text-align: center;
-    align-items: center;
-} */
-
-
-/* MEDIASQUERYS */
-
-
-@media (min-width: 1056px) and (max-width: 1628px) {
-    #Barcos{
-        width: 350px;
-        height: 250px;
-    }
-    #Pesca {
-        width: 350px;
-        height: 250px;
-    }   
-
-    #aside{
-        width: 18%;
-        height: 350px;
-
-    }
-
-    .titulo{
-        font-size: 1.2rem;
-    }
-    .texto{
-        font-size: 0.7rem;
-    }
-
-}
-
-@media (min-width: 811px) and (max-width: 1056px) {
-    
-    a{
-        font-size: 0.8rem;
-        border-radius: 20px;
-        border: 2px solid black;
-        padding: 10px;
-       
-    }
-    #section{
-        width: 70%;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        
-    }    
-    #Barcos{
-        width: 350px;
-        height: 250px;
-        margin-bottom: 8px;
-    }
-    #Pesca {
-        width: 350px;
-        height: 250px;
-    }   
-
-    #aside{
-        width: 20%;
-        height: 350px;
-
-    }
-
-    .titulo{
-        font-size: 1.2rem;
-    }
-    .texto{
-        font-size: 0.7rem;
-    }
-    
-}
-@media (min-width: 500px) and (max-width: 811px) {
-    
-    #logo{ 
-        width: auto;
-
-    }
-
-    a{
-        font-size: 0.5rem;
-        border-radius: 10px;
-        border: 2px solid black;
-        padding: 10px;
-       
-    }
-    #section{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        
-    }    
-    #Barcos{
-        width: 350px;
-        height: 250px;
-        margin-bottom: 8px;
-    }
-    #Pesca {
-        width: 350px;
-        height: 250px;
-    }   
-
-    #aside{
-        display: none;
-    }
-
-
-    footer{
-        font-size: 1rem;
-        align-items: center;
-
-    }
-}
-
-@media (min-width: 320px) and (max-width: 500px) {
-    
-    #logo{ 
-        width: 100px;
-        height: 15vh;
-
-    }
-
-    a{  
-        flex-direction: column;
-        flex-wrap: wrap ;
-        font-size: 0.5rem;
-        border-radius: 10px;
-        border: 2px solid black;
-        padding: 10px;
-       
-    }
-    #section{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        
-    }    
-    #Barcos{
-        width: 310px;
-        height: 250px;
-        margin-bottom: 8px;
-    }
-    #Pesca {
-        width: 310px;
-        height: 250px;
-    }   
-
-    #aside{
-        display: none;
-    }
-
-
-    footer{
-        width: 100%;
-        font-size: 1rem;
-        align-items: center;
-
-    }
-}
-
-
-@media(min-width: 50px) and (max-width: 320px){
-
-    #aside{
-        display: none;
-    }
-
-}
-
+/*# sourceMappingURL=style.css.map */

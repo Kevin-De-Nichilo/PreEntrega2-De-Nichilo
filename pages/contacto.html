@@ -19,7 +19,7 @@
     <header class="container-fluid bg-dark">
         <div class="row h-100">
             <div class="col-3"><img class="d-flex justify-content-center align-items-center"
-                    src="../assets/imagenes/logo-nuevo.png" alt="Pescaderia De Nichilo" width="250" height="120"">
+                    src="../assets/imagenes/logo-nuevo.png" alt="logo-pescaderia-de-nichilo" width="250" height="120"">
            </div>
               <nav class=" col-9">
                 <ul class="d-flex justify-content-around align-items-center h-100">
@@ -35,81 +35,82 @@
     </header>
 
     <!-- FORMULARIO DE CONTACTO -->
-
-    <h1 class="Titulo">Contacto y ubicacion</h1>
-    <div id="content">
-
-        <div id="Ubicacion">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3140.588216310569!2d-57.584602!3d-38.079969999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzjCsDA0JzQ3LjkiUyA1N8KwMzUnMDQuNiJX!5e0!3m2!1ses!2sar!4v1690990188634!5m2!1ses!2sar"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+    <main>       
+        <div id="content">
+            <div id="Ubicacion">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3140.588216310569!2d-57.584602!3d-38.079969999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzjCsDA0JzQ3LjkiUyA1N8KwMzUnMDQuNiJX!5e0!3m2!1ses!2sar!4v1690990188634!5m2!1ses!2sar"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         
-        <div id="formulario" class="bg-dark">
-            <form action="" method="post" enctype="text/plain">
-                <fieldset>
-                    <legend>CONTACTANOS</legend>
-                    <div><label for="nombre">Escriba su nombre:</label>
-                        <input type="text" name="Nombre completo" id="nombre" required placeholder="Nombre y apellido">
-                    </div>
+            <div id="formulario" class="bg-dark">
+                <form action="" method="post" enctype="text/plain">
+                    <fieldset>
+                        <legend>CONTACTANOS</legend>
+                        <div>
+                            <label for="nombre">Escriba su nombre:</label>
+                            <input type="text" name="Nombre completo" id="nombre" required placeholder="Nombre + apellido">
+                        </div>
 
-                    <div><label for="correo">Escriba su email:</label>
-                        <input type="email" name="email" id="correo" required placeholder="hola@gmail.com">
-                    </div>
+                        <div>
+                            <label for="correo">Escriba su email:</label>
+                            <input type="email" name="email" id="correo" required placeholder="hola@gmail.com">
+                        </div>
    
+                        <div>
+                            <label for="Provincia">Seleccione su provincia:</label>
+                            <select name="Provincia" id="Provincia">
+                                <option>Buenos Aires</option>
+                                <option>Ciudad Autonoma de Buenos Aires</option>
+                                <option>Catamarca</option>
+                                <option>Chaco</option>
+                                <option>Chubut</option>
+                                <option>Córdoba</option>
+                                <option>Corrientes</option>
+                                <option>Entre Ríos</option>
+                                <option>Formosa</option>
+                                <option>Jujuy</option>
+                                <option>La Pampa</option>
+                                <option>La Rioja</option>
+                                <option>Mendoza</option>
+                                <option>Misiones</option>
+                                <option>Neuquén</option>
+                                <option>Río Negro</option>
+                                <option>Salta</option>
+                                <option>San Juan</option>
+                                <option>San Luis</option>
+                                <option>Santa Cruz</option>
+                                <option>Santa Fe</option>
+                                <option>Santiago del Estero</option>
+                                <option>Tierra del Fuego</option>
+                                <option>Tucumán</option>
+                            </select> 
+                        </div>
+
+                        <div class="Mensaje">
+                            <label for="mensaje">Dejanos tu mensaje:</label>
+                            <textarea name="mensaje" id="mensaje" placeholder="Mensaje" required></textarea>
+                        </div>
+                    </fieldset>
+
                     <div>
-                        <label for="Provincia">Seleccione su provincia:</label>
-                        <select name="Provincia" id="Provincia">
-                            <option>Buenos Aires</option>
-                            <option>Ciudad Autonoma de Buenos Aires</option>
-                            <option>Catamarca</option>
-                            <option>Chaco</option>
-                            <option>Chubut</option>
-                            <option>Córdoba</option>
-                            <option>Corrientes</option>
-                            <option>Entre Ríos</option>
-                            <option>Formosa</option>
-                            <option>Jujuy</option>
-                            <option>La Pampa</option>
-                            <option>La Rioja</option>
-                            <option>Mendoza</option>
-                            <option>Misiones</option>
-                            <option>Neuquén</option>
-                            <option>Río Negro</option>
-                            <option>Salta</option>
-                            <option>San Juan</option>
-                            <option>San Luis</option>
-                            <option>Santa Cruz</option>
-                            <option>Santa Fe</option>
-                            <option>Santiago del Estero</option>
-                            <option>Tierra del Fuego</option>
-                            <option>Tucumán</option>
-                        </select> 
+                        <input class="reset" type="reset" value="Resetear">
+                        <input class="send" type="submit" value="Enviar">
+
                     </div>
 
-                    <div class="Mensaje">
-                        <label for="mensaje">Dejanos tu mensaje:</label>
-                        <textarea name="mensaje" id="mensaje" placeholder="Mensaje" required></textarea>
-                    </div>
-                </fieldset>
 
-                <div>
-                    <input class="reset" type="reset" value="Resetear">
-                    <input class="send" type="submit" value="Enviar">
+                </form>
 
-                </div>
+            </div>
 
 
-            </form>
 
         </div>
 
-
-
-    </div>
-
-
+    </main>
+    
 
     <footer>
         <div class="container-fluid bg-dark">

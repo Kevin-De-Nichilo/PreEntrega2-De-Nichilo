@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: #CBB26A;
+    margin: 0;
+    height: 100vh;
+
+}
+
+@import './modulos/header';
+@import './modulos/main-incio';
+@import './modulos/productos';
+@import './modulos/nosotros';
+@import './modulos/descongelado';
+@import './modulos/contacto';
+@import './modulos/footer';
+

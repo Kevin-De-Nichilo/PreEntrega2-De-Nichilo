@@ -1,0 +1,44 @@
+main{
+    .nosotros{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        text-align: center;
+        .somos{
+            .resp1{
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .produccion{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .producimos{
+            .resp2{
+                font-size: 1.3rem;
+            }
+        }
+    }
+    .fotos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        #puerto{
+            margin-right: 20px;
+            width: 500px;
+            height: 350px;
+
+        }
+        #planta{
+            width: 500px;
+            height: 350px;
+        }
+
+        }
+}

@@ -1,0 +1,105 @@
+main{
+    #content{
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        #Ubicacion{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            iframe{
+                width: 600px;
+                height: 450px;
+            }
+        }
+        #formulario{
+            border: 2px solid black;
+            margin: 200px;
+            padding: 0;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            width: 600px;
+            height: 450px;
+            form{
+                fieldset{
+                    legend{
+                        color: #CBB26A;
+                        border-bottom: 2px solid white;
+
+                    }
+                    div{
+                        label{
+                            color: #CBB26A;
+                        }
+                        input{
+
+                        }
+                    }
+                    div{
+                        label{
+                            color: #CBB26A;
+                        }
+                        input{
+                            
+                        }
+                    }
+                    div{
+                        label{
+                            color: #CBB26A;
+                        }
+                        #Provincia{
+                            width: 100%;
+                            option{
+
+                            }
+                            
+                        }
+                    }
+                    .Mensaje{
+                        label{
+                            color: #CBB26A;
+                        }
+                        #mensaje{
+                            width: 100%;
+                        }
+                            
+                        }
+                    }
+                    .reset{
+                        text-decoration: none;
+                        background-color: #1a1a1a;
+                        color:#CBB26A;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 1.5rem;
+                        border: 2px solid black;
+                        padding: 20px;
+                        &:hover{
+                            background-color: #1a1a1a;
+                            color: white;
+                            font-size: 1.7rem;
+                        }
+    
+                    }
+                    .send{
+                        text-decoration: none;
+                        background-color: #1a1a1a;
+                        color:#CBB26A;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 1.5rem;
+                        border: 2px solid black;
+                        padding: 20px;
+                        &:hover{
+                            background-color: #1a1a1a;
+                            color: white;
+                            font-size: 1.7rem;
+                    }
+                }                
+            }
+        }
+    }
+}
