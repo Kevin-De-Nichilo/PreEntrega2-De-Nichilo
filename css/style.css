@@ -10,6 +10,19 @@ body {
   height: 100vh;
 }
 
+@media (min-width: 1200px) and (max-width: 1642px) {
+  #Barcos {
+    width: 350px;
+    height: 250px;
+  }
+  #Pesca {
+    width: 350px;
+    height: 250px;
+  }
+  #aside {
+    display: none;
+  }
+}
 header {
   height: 15vh;
   background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 13%, rgb(60, 60, 60) 18%, rgb(52, 51, 51) 70%, rgb(0, 0, 0) 86%);
@@ -101,7 +114,27 @@ main #seccion #aside .texto {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-main h1 {
+@media (min-width: 1200px) and (max-width: 1642px) {
+  #Barcos {
+    width: 350px;
+    height: 250px;
+  }
+  #Pesca {
+    width: 350px;
+    height: 250px;
+  }
+  #aside {
+    display: none;
+  }
+}
+main .pagTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+main .pagTitle h1 {
   text-align: center;
 }
 main .container-flex {

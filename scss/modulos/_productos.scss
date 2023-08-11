@@ -1,7 +1,15 @@
 main{
-    h1{
-        text-align: center;
+    .pagTitle{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        h1{
+            text-align: center;
+        }
     }
+    
     .container-flex{
         display: flex;
         flex-direction: row;
