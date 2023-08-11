@@ -224,14 +224,23 @@ main #informacion #titulo {
   font-family: "Times New Roman", Times, serif;
   font-weight: bold;
 }
-main #informacion #descongelado {
+main #informacion .contenedorPuntos .puntos {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main #informacion .contenedorPuntos .puntos .p1 {
+  list-style: none;
   text-align: center;
   font-size: 2rem;
   border-bottom: 3px solid white;
   font-family: Arial, Helvetica, sans-serif;
 }
-main #informacion #descongela2 {
+main #informacion .contenedorPuntos .puntos .p2 {
+  list-style: none;
   text-align: center;
+  padding: 1%;
   font-size: 1.5rem;
   border-bottom: 3px solid white;
 }

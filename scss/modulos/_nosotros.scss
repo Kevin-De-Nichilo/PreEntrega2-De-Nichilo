@@ -4,7 +4,7 @@ main{
         flex-flow: column wrap;
         justify-content: center;
         text-align: center;
-        font-family:'Times New Roman', Times, serif;
+        font-family: $fuente;
         font-weight: bold;
         }
         .resp1{
@@ -37,7 +37,7 @@ main{
         justify-content: center;
         align-items: center;
         text-align: center;
-        font-family:'Times New Roman', Times, serif;
+        font-family: $fuente;
         font-weight: bold;
         .resp2{
             font-size: 1.5rem;
