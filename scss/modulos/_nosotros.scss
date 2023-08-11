@@ -5,11 +5,29 @@ main{
         justify-content: center;
         text-align: center;
         .somos{
-            .resp1{
-                font-size: 1.5rem;
-            }
+            
+        }
+        .resp1{
+            font-size: 1.5rem;
+
+    }
+
+    .foto1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        #puerto{
+            width: 400px;
+            height: 250px;
+            margin-right: 20px;
+        #planta{
+            width: 400px;
+            height: 250px;
         }
     }
+
     .produccion{
         display: flex;
         flex-direction: column;
@@ -18,27 +36,15 @@ main{
         align-items: center;
         text-align: center;
         .producimos{
-            .resp2{
-                font-size: 1.3rem;
-            }
+            
         }
+        .resp2{
+            font-size: 1.3rem;
+        }
+        
     }
-    .fotos{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        #puerto{
-            margin-right: 20px;
-            width: 500px;
-            height: 350px;
 
-        }
-        #planta{
-            width: 500px;
-            height: 350px;
-        }
-
-        }
 }
+
+}
+
