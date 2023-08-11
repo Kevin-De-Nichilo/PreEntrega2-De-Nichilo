@@ -4,30 +4,28 @@ main{
         flex-flow: column wrap;
         justify-content: center;
         text-align: center;
-        .somos{
-            
         }
         .resp1{
             font-size: 1.5rem;
 
         }
-        .fotos{
+    }
+    .fotos{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
             #puerto{
-            width: 400px;
-            height: 250px;
+            width: 500px;
+            height: 350px;
             margin-right: 20px;
             }
             #planta{
-            width: 400px;
-            height: 250px;
+            width: 500px;
+            height: 350px;
             }
         }
-    }
     .produccion{
         display: flex;
         flex-direction: column;
@@ -35,14 +33,10 @@ main{
         justify-content: center;
         align-items: center;
         text-align: center;
-        .producimos{
-            
-        }
         .resp2{
             font-size: 1.3rem;
         }
         
     }
 
-}
 

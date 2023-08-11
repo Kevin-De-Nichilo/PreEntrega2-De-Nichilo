@@ -142,10 +142,28 @@ main .nosotros {
   justify-content: center;
   text-align: center;
 }
-main .nosotros .somos .resp1 {
+main .resp1 {
   font-size: 1.5rem;
 }
-main .produccion {
+
+.fotos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.fotos #puerto {
+  width: 500px;
+  height: 350px;
+  margin-right: 20px;
+}
+.fotos #planta {
+  width: 500px;
+  height: 350px;
+}
+
+.produccion {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -153,24 +171,8 @@ main .produccion {
   align-items: center;
   text-align: center;
 }
-main .produccion .producimos .resp2 {
+.produccion .resp2 {
   font-size: 1.3rem;
-}
-main .fotos {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-main .fotos #puerto {
-  margin-right: 20px;
-  width: 500px;
-  height: 350px;
-}
-main .fotos #planta {
-  width: 500px;
-  height: 350px;
 }
 
 main #informacion {
@@ -313,20 +315,59 @@ footer {
   color: #CBB26A;
   text-align: center;
   margin-top: auto;
+  position: relative;
 }
-footer a {
+footer .contenedorP {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .contenedorP .copy {
+  justify-content: flex-start;
+  align-items: center;
+}
+footer .contenedorP .copy p {
+  text-align: center;
+}
+footer .contenedorP .navRedes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+footer .contenedorP .navRedes .redes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+footer .contenedorP .navRedes .redes .svgF {
+  list-style: none;
+  list-style-type: none;
+  align-self: flex-end;
+}
+footer .contenedorP .navRedes .redes .svgF a {
   text-decoration: none;
-  color: #CBB26A;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.5rem;
-  border-radius: 40px;
-  border: 2px solid black;
-  padding: 20px;
 }
-footer a:hover {
-  background-color: #CBB26A;
-  color: #1a1a1a;
-  font-size: 2rem;
+footer .contenedorP .navRedes .redes .svgF a img {
+  width: 50px;
+  height: 50px;
+}
+footer .contenedorP .navRedes .redes .svgI {
+  list-style: none;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+footer .contenedorP .navRedes .redes .svgI a {
+  text-decoration: none;
+  border: none;
+}
+footer .contenedorP .navRedes .redes .svgI a img {
+  width: 50px;
+  height: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */
