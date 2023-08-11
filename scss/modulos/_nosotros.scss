@@ -10,24 +10,24 @@ main{
         .resp1{
             font-size: 1.5rem;
 
-    }
-
-    .foto1{
+        }
+        .fotos{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        #puerto{
+            #puerto{
             width: 400px;
             height: 250px;
             margin-right: 20px;
-        #planta{
+            }
+            #planta{
             width: 400px;
             height: 250px;
+            }
         }
     }
-
     .produccion{
         display: flex;
         flex-direction: column;
@@ -43,8 +43,6 @@ main{
         }
         
     }
-
-}
 
 }
 
