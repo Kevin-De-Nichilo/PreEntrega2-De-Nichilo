@@ -20,7 +20,8 @@ header div #logo {
 header nav ul li a {
   text-decoration: none;
   color: #CBB26A;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
   font-size: 1.5rem;
   border-radius: 40px;
   border: 2px solid black;
@@ -80,9 +81,11 @@ main #seccion #aside {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  font-family: "Times New Roman", Times, serif;
 }
 main #seccion #aside .titulo {
   text-align: center;
+  font-weight: bold;
 }
 main #seccion #aside .texto {
   justify-content: flex-end;
@@ -90,6 +93,9 @@ main #seccion #aside .texto {
   align-items: center;
 }
 
+main h1 {
+  text-align: center;
+}
 main .container-flex {
   display: flex;
   flex-direction: row;
@@ -103,6 +109,7 @@ main .container-flex {
 main .container-flex .container-img {
   width: 300px;
   height: 300px;
+  background-color: white;
   border: 2px solid black;
 }
 main .container-flex .container-img #merluza {
@@ -113,37 +120,44 @@ main .container-flex .container-img {
   width: 300px;
   height: 300px;
   border: 2px solid black;
+  background-color: white;
 }
 main .container-flex .container-img #calamar {
   width: 200px;
   height: 200px;
 }
-main .container-flex .container-img {
+main .container-img {
   width: 300px;
   height: 300px;
   border: 2px solid black;
+  background-color: white;
 }
-main .container-flex .container-img #abadejo {
+main .container-img #abadejo {
   width: 200px;
   height: 200px;
 }
-main .container-flex .container-img {
+
+.container-img {
   width: 300px;
   height: 300px;
   border: 2px solid black;
+  background-color: white;
 }
-main .container-flex .container-img #langostino {
+.container-img #langostino {
   width: 200px;
   height: 200px;
 }
+
 main .nosotros {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   text-align: center;
+  font-family: "Times New Roman", Times, serif;
 }
 main .resp1 {
   font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .fotos {
@@ -170,9 +184,10 @@ main .resp1 {
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-family: "Times New Roman", Times, serif;
 }
 .produccion .resp2 {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 main #informacion {
@@ -184,17 +199,19 @@ main #informacion {
   margin-bottom: 20px;
 }
 main #informacion #titulo {
-  border-bottom: 2px solid black;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
 }
 main #informacion #descongelado {
   text-align: center;
   font-size: 2rem;
-  border-bottom: 2px solid black;
+  border-bottom: 3px solid white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 main #informacion #descongela2 {
   text-align: center;
   font-size: 1.5rem;
-  border-bottom: 2px solid black;
+  border-bottom: 3px solid white;
 }
 main .img-tips {
   display: flex;
@@ -226,6 +243,8 @@ main .containerTips {
 }
 main .containerTips h2 {
   text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
 }
 
 main #content {
@@ -315,14 +334,16 @@ footer {
   color: #CBB26A;
   text-align: center;
   margin-top: auto;
-  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
 }
 footer .contenedorP {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
 }
 footer .contenedorP .copy {
   justify-content: flex-start;
@@ -330,6 +351,8 @@ footer .contenedorP .copy {
 }
 footer .contenedorP .copy p {
   text-align: center;
+  align-items: center;
+  font-family: "Times New Roman", Times, serif;
 }
 footer .contenedorP .navRedes {
   display: flex;
@@ -341,11 +364,10 @@ footer .contenedorP .navRedes .redes {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: flex-end;
 }
 footer .contenedorP .navRedes .redes .svgF {
   list-style: none;
-  list-style-type: none;
   align-self: flex-end;
 }
 footer .contenedorP .navRedes .redes .svgF a {
@@ -354,6 +376,7 @@ footer .contenedorP .navRedes .redes .svgF a {
 footer .contenedorP .navRedes .redes .svgF a img {
   width: 50px;
   height: 50px;
+  margin-right: 5px;
 }
 footer .contenedorP .navRedes .redes .svgI {
   list-style: none;
@@ -366,6 +389,18 @@ footer .contenedorP .navRedes .redes .svgI a {
   border: none;
 }
 footer .contenedorP .navRedes .redes .svgI a img {
+  width: 54px;
+  height: 53px;
+}
+footer .contenedorP .navRedes .redes .svgW {
+  list-style: none;
+  list-style-type: none;
+  align-self: flex-end;
+}
+footer .contenedorP .navRedes .redes .svgW a {
+  text-decoration: none;
+}
+footer .contenedorP .navRedes .redes .svgW a img {
   width: 50px;
   height: 50px;
 }

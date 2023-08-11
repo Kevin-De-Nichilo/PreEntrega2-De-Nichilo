@@ -44,8 +44,10 @@ main{
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
+            font-family: 'Times New Roman', Times, serif;
             .titulo{
                 text-align: center;
+                font-weight: bold;
             }
             .texto{
                 justify-content: flex-end;
