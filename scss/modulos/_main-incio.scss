@@ -44,15 +44,16 @@ main{
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-            font-family: 'Times New Roman', Times, serif;
             .titulo{
                 text-align: center;
+                font-family: 'Times New Roman', Times, serif;
                 font-weight: bold;
             }
             .texto{
                 justify-content: flex-end;
                 text-align: center;
                 align-items: center;
+                font-family: Arial, Helvetica, sans-serif;
             }
     }
     

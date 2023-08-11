@@ -81,16 +81,17 @@ main #seccion #aside {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  font-family: "Times New Roman", Times, serif;
 }
 main #seccion #aside .titulo {
   text-align: center;
+  font-family: "Times New Roman", Times, serif;
   font-weight: bold;
 }
 main #seccion #aside .texto {
   justify-content: flex-end;
   text-align: center;
   align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 main h1 {
