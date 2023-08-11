@@ -18,17 +18,23 @@ main{
             justify-content: center;
             align-items: center;
             #Barcos{
-                margin-right: 15px;
+                margin-right: 25px;
                 display: flex;
                 flex-wrap: wrap;
                 width: 550px;
                 height: 450px;
+                box-shadow: 0px 0px 5px 1px black;
+                &hover{
+                    scale: (1.04);
+                }
+            }
             }
             #Pesca{
                 display: flex;
                 flex-wrap: wrap;
                 width: 550px;
                 height: 450px;
+                box-shadow: 0px 0px 5px 1px black;
             }
         }
         #aside{
@@ -48,6 +54,8 @@ main{
                 text-align: center;
                 font-family: 'Times New Roman', Times, serif;
                 font-weight: bold;
+                width: 100%;
+                border-bottom: 2px solid white;
             }
             .texto{
                 justify-content: flex-end;
@@ -58,4 +66,3 @@ main{
     }
     
     }
-}

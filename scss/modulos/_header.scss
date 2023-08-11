@@ -1,5 +1,6 @@
 header{
     height: 15vh;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 13%, rgba(60,60,60,1) 18%, rgba(52,51,51,1) 70%, rgba(0,0,0,1) 86%);
     div{
         #logo{
             width: 250px;
@@ -9,6 +10,7 @@ header{
     nav{
         ul{
             li{
+                list-style: none;
                 a{
                     text-decoration: none;
                     color:#CBB26A;
@@ -16,7 +18,6 @@ header{
                     font-weight: bold;
                     font-size: 1.5rem;
                     border-radius: 40px;
-                    border: 2px solid black;
                     padding: 20px;
 
                     &:hover{
