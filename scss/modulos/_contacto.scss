@@ -30,23 +30,20 @@ main{
                     legend{
                         color: #CBB26A;
                         border-bottom: 2px solid white;
+                        font-family: $fuente;
 
                     }
                     div{
                         label{
                             color: #CBB26A;
                         }
-                        input{
 
-                        }
                     }
                     div{
                         label{
                             color: #CBB26A;
                         }
-                        input{
-                            
-                        }
+
                     }
                     div{
                         label{
@@ -54,9 +51,7 @@ main{
                         }
                         #Provincia{
                             width: 100%;
-                            option{
 
-                            }
                             
                         }
                     }
@@ -78,6 +73,7 @@ main{
                         font-size: 1.5rem;
                         border: 2px solid black;
                         padding: 20px;
+                        font-family: $fuente;
                         &:hover{
                             background-color: #1a1a1a;
                             color: white;
@@ -93,6 +89,7 @@ main{
                         font-size: 1.5rem;
                         border: 2px solid black;
                         padding: 20px;
+                        font-family: $fuente;
                         &:hover{
                             background-color: #1a1a1a;
                             color: white;
