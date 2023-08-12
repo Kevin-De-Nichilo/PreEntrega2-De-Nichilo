@@ -1,49 +1,82 @@
-main{
-    .nosotros{
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        text-align: center;
-        font-family: $fuente;
-        font-weight: bold;
-        }
-        .resp1{
-            font-size: 1.5rem;
-            font-family: Arial, Helvetica, sans-serif;
-        }
+body{
+    @include tabletM{
+        width: 100vh;
+        height: 100vh;
     }
-    .fotos{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-            #puerto{
-            width: 500px;
-            height: 350px;
-            box-shadow: 0px 0px 5px 1px black;
-            margin-right: 30px;
+    main{
+        position: relative;
+        width: 100%;
+        .nosotros{
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            text-align: center;
+            font-family: $fuente;
+            font-weight: bold;
+            @include desktopL{
+                font-size: 1.3rem;
             }
-            #planta{
-            width: 500px;
-            height: 350px;
-            box-shadow: 0px 0px 5px 1px black;
+            }
+            .resp1{
+                font-size: 1.5rem;
+                font-family: Arial, Helvetica, sans-serif;
+                @include desktopL{
+                    font-size: 1rem;
+                }
             }
         }
-    .produccion{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        font-family: $fuente;
-        font-weight: bold;
-        .resp2{
-            font-size: 1.5rem;
-            font-family: Arial, Helvetica, sans-serif;
+        .fotos{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+                #puerto{
+                width: 500px;
+                height: 350px;
+                box-shadow: 0px 0px 5px 1px black;
+                margin-right: 30px;
+                @include desktopL{
+                    width: 350px;
+                    height: 200px;
+                }
+                }
+                #planta{
+                width: 500px;
+                height: 350px;
+                box-shadow: 0px 0px 5px 1px black;
+                @include desktopL{
+                    width: 350px;
+                    height: 200px;
+                }
+                }
+            }
+        .produccion{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: $fuente;
+            font-weight: bold;
+            @include desktopL{
+               font-size: 1.3rem;
+            }
+            .resp2{
+                font-size: 1.5rem;
+                font-family: Arial, Helvetica, sans-serif;
+                @include desktopL{
+                    font-size: 1rem;
+                 }
+            }
+            
         }
-        
+    
+    footer{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
     }
-
-
+    
+}

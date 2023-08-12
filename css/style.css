@@ -10,19 +10,6 @@ body {
   height: 100vh;
 }
 
-@media (min-width: 1200px) and (max-width: 1642px) {
-  #Barcos {
-    width: 350px;
-    height: 250px;
-  }
-  #Pesca {
-    width: 350px;
-    height: 250px;
-  }
-  #aside {
-    display: none;
-  }
-}
 header {
   height: 15vh;
   background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 13%, rgb(60, 60, 60) 18%, rgb(52, 51, 51) 70%, rgb(0, 0, 0) 86%);
@@ -49,21 +36,26 @@ header nav ul li a:hover {
   font-size: 2rem;
 }
 
-main {
+@media screen and (max-width: 768px) {
+  body {
+    width: 100vh;
+  }
+}
+body main {
   height: 75vh;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
 }
-main #seccion {
+body #seccion {
   height: 100%;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
 }
-main #seccion #section {
+body #seccion #section {
   width: 70%;
   display: flex;
   flex-direction: row;
@@ -71,7 +63,7 @@ main #seccion #section {
   justify-content: center;
   align-items: center;
 }
-main #seccion #section #Barcos {
+body #seccion #Barcos {
   margin-right: 25px;
   display: flex;
   flex-wrap: wrap;
@@ -79,14 +71,38 @@ main #seccion #section #Barcos {
   height: 450px;
   box-shadow: 0px 0px 5px 1px black;
 }
-main #seccion #section #Pesca {
+@media screen and (max-width: 1440px) {
+  body #seccion #Barcos {
+    width: 350px;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 996px) {
+  body #seccion #Barcos {
+    width: 200px;
+    height: 150px;
+  }
+}
+body #seccion #Pesca {
   display: flex;
   flex-wrap: wrap;
   width: 550px;
   height: 450px;
   box-shadow: 0px 0px 5px 1px black;
 }
-main #seccion #aside {
+@media screen and (max-width: 1440px) {
+  body #seccion #Pesca {
+    width: 350px;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 996px) {
+  body #seccion #Pesca {
+    width: 200px;
+    height: 150px;
+  }
+}
+body #aside {
   width: 22%;
   border: 2px solid black;
   background-color: #1a1a1a;
@@ -100,44 +116,49 @@ main #seccion #aside {
   justify-content: center;
   align-items: center;
 }
-main #seccion #aside .titulo {
+@media screen and (max-width: 1440px) {
+  body #aside {
+    font-size: small;
+    height: 450px;
+  }
+}
+@media screen and (max-width: 996px) {
+  body #aside {
+    width: 100%;
+    font-size: 1rem;
+    height: 300px;
+  }
+}
+body #aside .titulo {
   text-align: center;
   font-family: "Times New Roman", Times, serif;
   font-weight: bold;
   width: 100%;
   border-bottom: 2px solid white;
 }
-main #seccion #aside .texto {
+body #aside .texto {
   justify-content: flex-end;
   text-align: center;
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-@media (min-width: 1200px) and (max-width: 1642px) {
-  #Barcos {
-    width: 350px;
-    height: 250px;
-  }
-  #Pesca {
-    width: 350px;
-    height: 250px;
-  }
-  #aside {
-    display: none;
+@media screen and (max-width: 768px) {
+  body {
+    width: 100vh;
   }
 }
-main .pagTitle {
+body main .pagTitle {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
-main .pagTitle h1 {
+body main .pagTitle h1 {
   text-align: center;
 }
-main .container-flex {
+body main .container-flex {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -147,18 +168,36 @@ main .container-flex {
   width: 100%;
   height: 100%;
 }
-main .container-flex .container-img {
+@media screen and (max-width: 768px) {
+  body main .container-flex {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+body main .container-flex .container-img {
   width: 300px;
   height: 500px;
   background-color: white;
   border: 2px solid black;
   box-shadow: 0px 0px 5px 1px black;
 }
-main .container-flex .container-img #merluza {
+@media screen and (max-width: 1200px) {
+  body main .container-flex .container-img {
+    width: 200px;
+    height: 300px;
+  }
+}
+body main .container-flex .container-img #merluza {
   width: 200px;
   height: 200px;
 }
-main .container-flex .container-img {
+@media screen and (max-width: 1200px) {
+  body main .container-flex .container-img #merluza {
+    width: 150px;
+    height: 150px;
+  }
+}
+body main .container-flex .container-img {
   width: 300px;
   height: 500px;
   border: 2px solid black;
@@ -170,35 +209,80 @@ main .container-flex .container-img {
   align-items: center;
   box-shadow: 0px 0px 5px 1px black;
 }
-main .container-flex .container-img #calamar {
+@media screen and (max-width: 1200px) {
+  body main .container-flex .container-img {
+    width: 200px;
+    height: 300px;
+  }
+}
+body main .container-flex .container-img #calamar {
   width: 200px;
   height: 200px;
 }
-main .container-img {
+@media screen and (max-width: 1200px) {
+  body main .container-flex .container-img #calamar {
+    width: 150px;
+    height: 150px;
+  }
+}
+body main .container-img {
   width: 300px;
   height: 500px;
   border: 2px solid black;
   background-color: white;
   box-shadow: 0px 0px 5px 1px black;
 }
-main .container-img #abadejo {
+@media screen and (max-width: 1200px) {
+  body main .container-img {
+    width: 200px;
+    height: 300px;
+  }
+}
+body main .container-img #abadejo {
   width: 200px;
   height: 200px;
 }
-
-.container-img {
+@media screen and (max-width: 1200px) {
+  body main .container-img #abadejo {
+    width: 150px;
+    height: 150px;
+  }
+}
+body .container-img {
   width: 300px;
   height: 500px;
   border: 2px solid black;
   background-color: white;
   box-shadow: 0px 0px 5px 1px black;
 }
-.container-img #langostino {
+@media screen and (max-width: 1200px) {
+  body .container-img {
+    width: 200px;
+    height: 300px;
+  }
+}
+body .container-img #langostino {
   width: 200px;
   height: 200px;
 }
+@media screen and (max-width: 1200px) {
+  body .container-img #langostino {
+    width: 150px;
+    height: 150px;
+  }
+}
 
-main .nosotros {
+@media screen and (max-width: 768px) {
+  body {
+    width: 100vh;
+    height: 100vh;
+  }
+}
+body main {
+  position: relative;
+  width: 100%;
+}
+body main .nosotros {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -206,31 +290,51 @@ main .nosotros {
   font-family: "Times New Roman", Times, serif;
   font-weight: bold;
 }
-main .resp1 {
+@media screen and (max-width: 1440px) {
+  body main .nosotros {
+    font-size: 1.3rem;
+  }
+}
+body main .resp1 {
   font-size: 1.5rem;
   font-family: Arial, Helvetica, sans-serif;
 }
-
-.fotos {
+@media screen and (max-width: 1440px) {
+  body main .resp1 {
+    font-size: 1rem;
+  }
+}
+body .fotos {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
-.fotos #puerto {
+body .fotos #puerto {
   width: 500px;
   height: 350px;
   box-shadow: 0px 0px 5px 1px black;
   margin-right: 30px;
 }
-.fotos #planta {
+@media screen and (max-width: 1440px) {
+  body .fotos #puerto {
+    width: 350px;
+    height: 200px;
+  }
+}
+body .fotos #planta {
   width: 500px;
   height: 350px;
   box-shadow: 0px 0px 5px 1px black;
 }
-
-.produccion {
+@media screen and (max-width: 1440px) {
+  body .fotos #planta {
+    width: 350px;
+    height: 200px;
+  }
+}
+body .produccion {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -240,9 +344,24 @@ main .resp1 {
   font-family: "Times New Roman", Times, serif;
   font-weight: bold;
 }
-.produccion .resp2 {
+@media screen and (max-width: 1440px) {
+  body .produccion {
+    font-size: 1.3rem;
+  }
+}
+body .produccion .resp2 {
   font-size: 1.5rem;
   font-family: Arial, Helvetica, sans-serif;
+}
+@media screen and (max-width: 1440px) {
+  body .produccion .resp2 {
+    font-size: 1rem;
+  }
+}
+body footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 main #informacion {
@@ -257,6 +376,11 @@ main #informacion #titulo {
   font-family: "Times New Roman", Times, serif;
   font-weight: bold;
 }
+@media screen and (max-width: 1440px) {
+  main #informacion #titulo {
+    font-size: 1.5rem;
+  }
+}
 main #informacion .contenedorPuntos .puntos {
   display: flex;
   flex-direction: column;
@@ -270,12 +394,22 @@ main #informacion .contenedorPuntos .puntos .p1 {
   border-bottom: 3px solid white;
   font-family: Arial, Helvetica, sans-serif;
 }
+@media screen and (max-width: 1440px) {
+  main #informacion .contenedorPuntos .puntos .p1 {
+    font-size: 1rem;
+  }
+}
 main #informacion .contenedorPuntos .puntos .p2 {
   list-style: none;
   text-align: center;
   padding: 1%;
   font-size: 1.5rem;
   border-bottom: 3px solid white;
+}
+@media screen and (max-width: 1440px) {
+  main #informacion .contenedorPuntos .puntos .p2 {
+    font-size: 1rem;
+  }
 }
 main .img-tips {
   display: flex;
@@ -295,6 +429,12 @@ main .img-tips #video iframe {
   width: 500px;
   height: 350px;
 }
+@media screen and (max-width: 1440px) {
+  main .img-tips #video iframe {
+    width: 350px;
+    height: 200px;
+  }
+}
 main .containerTips {
   display: flex;
   flex-direction: column;
@@ -305,10 +445,21 @@ main .containerTips {
   height: 50%;
   margin-left: 20px;
 }
+@media screen and (max-width: 1440px) {
+  main .containerTips {
+    width: 250px;
+    height: 200px;
+  }
+}
 main .containerTips h2 {
   text-align: center;
   font-family: "Times New Roman", Times, serif;
   font-weight: bold;
+}
+@media screen and (max-width: 1440px) {
+  main .containerTips h2 {
+    font-size: 1rem;
+  }
 }
 
 main #content {
@@ -319,6 +470,11 @@ main #content {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 996px) {
+  main #content {
+    flex-direction: column;
+  }
+}
 main #content #Ubicacion {
   display: flex;
   justify-content: center;
@@ -327,6 +483,12 @@ main #content #Ubicacion {
 main #content #Ubicacion iframe {
   width: 600px;
   height: 450px;
+}
+@media screen and (max-width: 1440px) {
+  main #content #Ubicacion iframe {
+    width: 400px;
+    height: 250px;
+  }
 }
 main #content #formulario {
   border: 2px solid black;
@@ -339,30 +501,36 @@ main #content #formulario {
   width: 600px;
   height: 450px;
 }
-main #content #formulario form fieldset legend {
+@media screen and (max-width: 1440px) {
+  main #content #formulario {
+    width: 400px;
+    height: 350px;
+  }
+}
+main #content form fieldset legend {
   color: #CBB26A;
   border-bottom: 2px solid white;
   font-family: "Times New Roman", Times, serif;
 }
-main #content #formulario form fieldset div label {
+main #content form fieldset div label {
   color: #CBB26A;
 }
-main #content #formulario form fieldset div label {
+main #content form fieldset div label {
   color: #CBB26A;
 }
-main #content #formulario form fieldset div label {
+main #content form fieldset div label {
   color: #CBB26A;
 }
-main #content #formulario form fieldset div #Provincia {
+main #content form fieldset div #Provincia {
   width: 100%;
 }
-main #content #formulario form fieldset .Mensaje label {
+main #content form fieldset .Mensaje label {
   color: #CBB26A;
 }
-main #content #formulario form fieldset .Mensaje #mensaje {
+main #content form fieldset .Mensaje #mensaje {
   width: 100%;
 }
-main #content #formulario form .reset {
+main #content form .reset {
   text-decoration: none;
   background-color: #1a1a1a;
   color: #CBB26A;
@@ -372,12 +540,12 @@ main #content #formulario form .reset {
   padding: 20px;
   font-family: "Times New Roman", Times, serif;
 }
-main #content #formulario form .reset:hover {
+main #content form .reset:hover {
   background-color: #1a1a1a;
   color: white;
-  font-size: 1.7rem;
+  font-size: 1rem;
 }
-main #content #formulario form .send {
+main #content form .send {
   text-decoration: none;
   background-color: #1a1a1a;
   color: #CBB26A;
@@ -387,14 +555,14 @@ main #content #formulario form .send {
   padding: 20px;
   font-family: "Times New Roman", Times, serif;
 }
-main #content #formulario form .send:hover {
+main #content form .send:hover {
   background-color: #1a1a1a;
   color: white;
-  font-size: 1.7rem;
+  font-size: 1rem;
 }
 
 footer {
-  height: 10vh;
+  height: 100px;
   background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 13%, rgb(60, 60, 60) 18%, rgb(52, 51, 51) 70%, rgb(0, 0, 0) 86%);
   font-family: "Times New Roman", Times, serif;
   font-size: 36px;
@@ -405,12 +573,40 @@ footer {
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-around;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  footer {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  footer {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 320px) {
+  footer {
+    width: 100%;
+  }
 }
 footer .contenedorP {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+@media screen and (max-width: 768px) {
+  footer .contenedorP {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  footer .contenedorP {
+    width: 100%;
+  }
 }
 footer .contenedorP .copy {
   justify-content: flex-start;
@@ -420,6 +616,16 @@ footer .contenedorP .copy p {
   text-align: center;
   align-items: center;
   font-family: "Times New Roman", Times, serif;
+}
+@media screen and (max-width: 1200px) {
+  footer .contenedorP .copy p {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 996px) {
+  footer .contenedorP .copy p {
+    font-size: 1.2rem;
+  }
 }
 footer .contenedorP .navRedes {
   display: flex;

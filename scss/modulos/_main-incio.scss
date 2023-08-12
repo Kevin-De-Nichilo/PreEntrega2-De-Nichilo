@@ -1,67 +1,105 @@
-main{
-    height: 75vh;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    #seccion{
-        height: 100%;
+body{
+    @include tabletM{
+        width: 100vh;
+    }
+    main{
+        height: 75vh;
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
         align-items: center;
-        #section{
-            width: 70%;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            #Barcos{
-                margin-right: 25px;
-                display: flex;
-                flex-wrap: wrap;
-                width: 550px;
-                height: 450px;
-                box-shadow: 0px 0px 5px 1px black;
-            }
-            #Pesca{
-                display: flex;
-                flex-wrap: wrap;
-                width: 550px;
-                height: 450px;
-                box-shadow: 0px 0px 5px 1px black;
-            }
+            
         }
-        #aside{
-            width: 22%;
-            border: 2px solid black;
-            background-color: #1a1a1a;
-            color:#CBB26A;
-            height: 450px;
-            margin-top: auto;
-            margin-bottom: auto;
+        #seccion{
+            height: 100%;
             display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
+            flex-flow: row wrap;
             justify-content: center;
             align-items: center;
-            .titulo{
-                text-align: center;
-                font-family: $fuente;
-                font-weight: bold;
-                width: 100%;
-                border-bottom: 2px solid white;
-            }
-            .texto{
-                justify-content: flex-end;
-                text-align: center;
+            
+            #section{
+                width: 70%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
                 align-items: center;
-                font-family: Arial, Helvetica, sans-serif;
+                    
+                }
+                #Barcos{
+                    margin-right: 25px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 550px;
+                    height: 450px;
+                    box-shadow: 0px 0px 5px 1px black;
+                    @include desktopL{    
+                        width: 350px;
+                        height: 250px;
+                    }
+                    @include tabletL{
+                        width: 200px;
+                        height: 150px;
+                            
+                    }
+                    
+                }
+                #Pesca{
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 550px;
+                    height: 450px;
+                    box-shadow: 0px 0px 5px 1px black;
+                    @include desktopL{
+                        width: 350px;
+                        height: 250px;
+                    }
+                    @include tabletL{
+                        width: 200px;
+                        height: 150px;
+                            
+                    }
+                }
             }
-    }
-    
-    }
+            #aside{
+                width: 22%;
+                border: 2px solid black;
+                background-color: #1a1a1a;
+                color:#CBB26A;
+                height: 450px;
+                margin-top: auto;
+                margin-bottom: auto;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                @include desktopL{
+                    font-size: small;
+                    height: 450px;
+                }
+                @include tabletL{
+                        width: 100%;
+                        font-size: 1rem;
+                        height: 300px;
+                }
+                .titulo{
+                    text-align: center;
+                    font-family: $fuente;
+                    font-weight: bold;
+                    width: 100%;
+                    border-bottom: 2px solid white;
+                }
+                .texto{
+                    justify-content: flex-end;
+                    text-align: center;
+                    align-items: center;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+        }
 }
 
-@include desktop;
+    
+
+
+

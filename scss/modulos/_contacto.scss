@@ -6,6 +6,9 @@ main{
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        @include tabletL{
+            flex-direction: column;
+        }
         #Ubicacion{
             display: flex;
             justify-content: center;
@@ -13,6 +16,10 @@ main{
             iframe{
                 width: 600px;
                 height: 450px;
+                @include desktopL{
+                    width: 400px;
+                    height: 250px;
+                }
             }
         }
         #formulario{
@@ -25,6 +32,11 @@ main{
             align-items: center;
             width: 600px;
             height: 450px;
+            @include desktopL{
+                width: 400px;
+                height: 350px;
+            }
+        }
             form{
                 fieldset{
                     legend{
@@ -77,7 +89,7 @@ main{
                         &:hover{
                             background-color: #1a1a1a;
                             color: white;
-                            font-size: 1.7rem;
+                            font-size: 1rem;
                         }
     
                     }
@@ -93,10 +105,9 @@ main{
                         &:hover{
                             background-color: #1a1a1a;
                             color: white;
-                            font-size: 1.7rem;
+                            font-size: 1rem;
                     }
                 }                
             }
         }
     }
-}

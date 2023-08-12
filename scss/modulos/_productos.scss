@@ -1,73 +1,114 @@
-main{
-    .pagTitle{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        h1{
-            text-align: center;
-        }
+body{
+    @include tabletM{
+        width: 100vh;
     }
-    
-    .container-flex{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-        text-align: center;
-        width: 100%;
-        height: 100%;
-        .container-img{
-            width: 300px;
-            height: 500px;
-            background-color: white;
-            border: 2px solid black;
-            box-shadow: 0px 0px 5px 1px black;
-            #merluza{
-                width: 200px;
-                height: 200px;
-            }
-        }
-        .container-img{
-            width: 300px;
-            height: 500px;
-            border: 2px solid black;
-            background-color: white;
+    main{
+        .pagTitle{
             display: flex;
             flex-direction: column;
-            flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-            box-shadow: 0px 0px 5px 1px black;
-            #calamar{
-                width: 200px;
-                height: 200px;
+            width: 100%;
+            h1{
+                text-align: center;
+            }
+        }
+        
+        .container-flex{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            @include tabletM{
+                flex-direction: column;
+                justify-content: space-between;
+            }
+            .container-img{
+                width: 300px;
+                height: 500px;
+                background-color: white;
+                border: 2px solid black;
+                box-shadow: 0px 0px 5px 1px black;
+                @include desktopM{
+                    width: 200px;
+                    height: 300px;
+                }
+                #merluza{
+                    @include desktopM{
+                        width: 150px;
+                        height: 150px;
+                    }
+                    width: 200px;
+                    height: 200px;
                 }
             }
-        }
-        .container-img{
-            width: 300px;
-            height: 500px;
-            border: 2px solid black;
-            background-color: white;
-            box-shadow: 0px 0px 5px 1px black;
-            #abadejo{
-                width: 200px;
-                height: 200px;
+            .container-img{
+                width: 300px;
+                height: 500px;
+                border: 2px solid black;
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 0px 0px 5px 1px black;
+                @include desktopM{
+                    width: 200px;
+                    height: 300px;
+                }
+                #calamar{
+                    width: 200px;
+                    height: 200px;
+                    @include desktopM{
+                        width: 150px;
+                        height: 150px;
+                    }
+                    }
                 }
             }
-        }
-        .container-img{
-            width: 300px;
-            height: 500px;
-            border: 2px solid black;
-            background-color: white;
-            box-shadow: 0px 0px 5px 1px black;
-            #langostino{
-                width: 200px;
-                height: 200px;
-
+            .container-img{
+                width: 300px;
+                height: 500px;
+                border: 2px solid black;
+                background-color: white;
+                box-shadow: 0px 0px 5px 1px black;
+                @include desktopM{
+                    width: 200px;
+                    height: 300px;
+                }
+                #abadejo{
+                    width: 200px;
+                    height: 200px;
+                    @include desktopM{
+                        width: 150px;
+                        height: 150px;
+                    }
+                    }
+                }
             }
-        }
+            .container-img{
+                width: 300px;
+                height: 500px;
+                border: 2px solid black;
+                background-color: white;
+                box-shadow: 0px 0px 5px 1px black;
+                @include desktopM{
+                    width: 200px;
+                    height: 300px;
+                }
+                #langostino{
+                    width: 200px;
+                    height: 200px;
+                    @include desktopM{
+                        width: 150px;
+                        height: 150px;
+                    }
+                }
+            }
+    
+}

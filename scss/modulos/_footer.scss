@@ -1,5 +1,5 @@
 footer{
-    height: 10vh;
+    height: 100px;
     background: $gradiante;
     font-family: $fuente;
     font-size: 36px;
@@ -10,12 +10,30 @@ footer{
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    @include tabletM{
+        width: 100%;
+    }
+    @include mobileL{
+        width: 100%;
+    }
+    @include mobileS{
+        width: 100%;
+    }
 
     .contenedorP{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
+        @include tabletM{
+            width: 100%;
+        }
+        @include mobileL{
+            width: 100%;
+        }
         .copy{
             justify-content: flex-start;
             align-items: center;
@@ -23,6 +41,14 @@ footer{
                 text-align: center;
                 align-items: center;
                 font-family: $fuente;
+
+                @include desktopM{
+                    font-size: 1.5rem;
+                }
+
+                @include tabletL{
+                    font-size: 1.2rem;
+                }
             }
         }
         
